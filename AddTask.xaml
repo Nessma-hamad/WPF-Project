@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
         Title="AddTask" Height="400" Width="450">
+    <Grid>
     <StackPanel Orientation="Vertical">
         <StackPanel Height="48">
             <TextBlock Margin="150,0,43,0" FontSize="20" FontFamily="Algerian"><Run Text="Create Task"/></TextBlock>
@@ -39,4 +40,5 @@
         </StackPanel>
         <Button Width="60" Height="30">create</Button>
     </StackPanel>
+    </Grid>
 </Window>

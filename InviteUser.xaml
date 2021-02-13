@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
         Title="InviteUser" Height="450" Width="350">
-    <WrapPanel>
+    <Grid>
         <StackPanel Width="330" Height="400">
             <TextBlock Margin="110,0,43,0" FontSize="20" FontFamily="Algerian"><Run Text="Invite User"/></TextBlock>
             <StackPanel >
@@ -15,5 +15,5 @@
             </StackPanel>
             <Button Height="20" Margin="140,50,115,0" RenderTransformOrigin="0.906,3.927"> ADD</Button>
         </StackPanel>
-    </WrapPanel>
+    </Grid>
 </Window>

@@ -39,3 +39,5 @@ E:\ITI\WPF\Project\obj\Debug\AddTask.g.cs
 E:\ITI\WPF\Project\obj\Debug\InviteUser.g.cs
 E:\ITI\WPF\Project\obj\Debug\AddTask.baml
 E:\ITI\WPF\Project\obj\Debug\InviteUser.baml
+E:\ITI\WPF\Project\obj\Debug\ViweTask.g.cs
+E:\ITI\WPF\Project\obj\Debug\ViweTask.baml
