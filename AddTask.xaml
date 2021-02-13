@@ -26,14 +26,14 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal"  Margin="0 20">
                     <TextBlock Margin="10 0" FontFamily="bold" Width="60">DateLine :</TextBlock>
-                    <DataGrid Width="100"></DataGrid>
+                    <DatePicker Width="100"></DatePicker>
                 </StackPanel>
 
             </StackPanel>
             <StackPanel Margin="30 0">
                 <StackPanel Orientation="Vertical"  Margin="0 20">
                     <TextBlock Margin="10 0" FontFamily="bold" Width="100"><Run Text="Assign Users:"/></TextBlock>
-                    <ListBoxItem Width="158" Height="100" Margin="20 0"/>
+                    <ListBoxItem BorderBrush="Black" Width="158" Height="100" Margin="20 5"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

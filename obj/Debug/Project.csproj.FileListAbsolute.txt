@@ -35,3 +35,7 @@ E:\ITI\WPF\Project\obj\Debug\CreatTeam.baml
 E:\ITI\WPF\Project\obj\Debug\Project.g.resources
 E:\ITI\WPF\Project\obj\Debug\Project.Properties.Resources.resources
 E:\ITI\WPF\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+E:\ITI\WPF\Project\obj\Debug\AddTask.g.cs
+E:\ITI\WPF\Project\obj\Debug\InviteUser.g.cs
+E:\ITI\WPF\Project\obj\Debug\AddTask.baml
+E:\ITI\WPF\Project\obj\Debug\InviteUser.baml
