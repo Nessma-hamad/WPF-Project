@@ -11,23 +11,50 @@
             <TextBlock Text="TeamName" Foreground="White" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Century Gothic"></TextBlock>
             <Button Width="50" Height="50" Content="x" FontSize="20" Background="{x:Null}" Panel.ZIndex="1" HorizontalAlignment="Right" Margin="0,0,10,0" Foreground="white"/>
         </Grid>
-        <Grid Background="#FF0078D7">
-            <TabControl Height="430">
-                <TabItem Header="Tasks" Background="Transparent" Padding="20"></TabItem>
-                <TabItem Header="Members" Background="Transparent" Padding="20"></TabItem>
-                <TabItem Header="Archive" Background="Transparent" Padding="20"></TabItem>
+        <Grid Background="#FF0078D7" Height="500">
+            <TabControl Height="500">
+                <TabItem Header="Tasks" Background="Transparent" Padding="20">
+                    <StackPanel>
+                        <Grid Height="343">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <ComboBox Name="categoryList" Height="70" Width="350" VerticalAlignment="Top" Margin="0 10"></ComboBox>
+                            <StackPanel Grid.Column="1" Width="350" Margin="0 10" >
+                                <Label Height="70" Name="categoryLabel" Background="#FF2C73BB" FontSize="23" Foreground="White"></Label>
+                                <ListBox Name="TasksList" FontSize="23"></ListBox>
+                            </StackPanel>
+                        </Grid>
+                        <Grid Height="100">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Button Height="50" Width="250" Grid.Column="0" Background="#FF2C73BB" Foreground="White" FontSize="20">Add Category</Button>
+                            <Button Height="50" Width="250" Grid.Column="1" Background="#FF2C73BB" Foreground="White" FontSize="20">Add Task</Button>
+                        </Grid>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="Members" Background="Transparent" Padding="20">
+                    <StackPanel>
+                        <ScrollViewer Height="343"></ScrollViewer>
+                        <Button Content="Add Member" Background="#FF2C73BB" Width="200" Height="70" HorizontalAlignment="Right" Margin="0,0,30,0" FontSize="23" Foreground="White"></Button>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="Archive" Background="Transparent" Padding="20">
+                    <ListView Name="DoneTask">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Task Name" Width="200"></GridViewColumn>
+                                <GridViewColumn Header="Pirority" Width="200"></GridViewColumn>
+                                <GridViewColumn Header="Deadline" Width="200"></GridViewColumn>
+                                <GridViewColumn Header="Category" Width="200"></GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </TabItem>
             </TabControl>
-        </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Button Height="50" Width="250" Grid.Column="0">Add Ctegory</Button>
-            <Button Height="50" Width="250" Grid.Column="1">Add Member</Button>
         </Grid>
     </StackPanel>
 </Window>
