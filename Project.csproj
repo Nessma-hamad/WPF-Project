@@ -58,6 +58,9 @@
     <Compile Include="TeamWindow.xaml.cs">
       <DependentUpon>TeamWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="tring.xaml.cs">
+      <DependentUpon>tring.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViweTask.xaml.cs">
       <DependentUpon>ViweTask.xaml</DependentUpon>
     </Compile>
@@ -96,6 +99,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TeamWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="tring.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

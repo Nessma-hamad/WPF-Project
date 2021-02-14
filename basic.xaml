@@ -5,29 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
-        Title="Team Mangement System" Height="350" Width="525">
+        Title="Team Mangement System" Height="600" Width="700">
     <Grid>
-        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="309" VerticalAlignment="Top" Width="517">
-            <TabItem Header="Teams" Height="22" VerticalAlignment="Top">
-                <Grid Background="#FFE5E5E5">
-                    <Button x:Name="button" Content="Add Team" HorizontalAlignment="Left" Margin="395,219,0,0" VerticalAlignment="Top" Width="85" Click="button_Click" RenderTransformOrigin="4.46,2.139" Height="32">
-                        <Button.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="-0.492"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </Button.RenderTransform>
-                    </Button>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="auto" VerticalAlignment="Center" Width="auto" Grid.Row="0" Grid.Column="0" >
+            <TabItem Header="Teams" Height="50" Width="200" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24" FontWeight="Bold" Grid.Column="0">
+              
+
+                <Grid Background="#FFE5E5E5" Height="506" Width="689">
+                    <Button Name="addTeam_btn" Content="New Team" Margin="418,400,55,39" Click="addTeam_btn_Click"></Button>
                 </Grid>
             </TabItem>
-            <TabItem Header="Users">
-                <Grid Background="#FFE5E5E5">
-                    <Button x:Name="button1" Content="Add User" HorizontalAlignment="Left" Margin="403,230,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click" Height="23"/>
+            <TabItem Header="Users" Height="50" Width="200" FontSize="24" FontFamily="Tahoma" FontWeight="Bold" Grid.Column="1" >
+                <Grid Background="#FFE5E5E5" Height="506" Width="689">
+                    <Button x:Name="addUser_btn" Content="New User"  Margin="475,409,42,42" Click="addUser_btn_Click" Height="55" Width="172"/>
                 </Grid>
             </TabItem>
         </TabControl>
 
+
     </Grid>
 </Window>
+<!--//Height="50" Width="200" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24" FontWeight="Bold"-->

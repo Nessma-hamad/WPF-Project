@@ -25,16 +25,19 @@ namespace Project
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            AddUser adduser = new AddUser();
-            adduser.Show();
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
+        
+        
+        private void addTeam_btn_Click(object sender, RoutedEventArgs e)
         {
             CreatTeam addteam = new CreatTeam();
             addteam.Show();
+        }
+
+        private void addUser_btn_Click(object sender, RoutedEventArgs e)
+        {
+            AddUser adduser = new AddUser();
+            adduser.Show();
+
         }
     }
 }

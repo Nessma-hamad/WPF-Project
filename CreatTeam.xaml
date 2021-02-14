@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
-        Title="CreatTeam" Height="300" Width="300">
-    <Grid>
-        
+        Title="CreatTeam" Height="600" Width="600">
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Style.Setters>
+                <Setter Property="FontSize" Value="18"></Setter>
+                <Setter Property="FontWeight" Value="Bold"></Setter>
+                <Setter Property="TextAlignment" Value="Left"></Setter>
+
+            </Style.Setters>
+
+        </Style>
+    </Window.Resources>
+    <Grid Margin="20 0 0 0 ">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90"></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" MinHeight="80"></RowDefinition>
+            <RowDefinition Height="auto" MinHeight="80"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+
+
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Name="TeamNamtxt"  Content="Name:" Grid.ColumnSpan="2" Margin="15,50,131,42"  />
+        <TextBox Grid.Row="0" Grid.Column="1" Width="auto" Margin="35,49,21,36" MaxHeight="40px"  Name="txtbxTeamName" MaxLength="20"/>
+        <Label Grid.Column="0" Name="Teamdesctxt"  Content="Description:" Grid.ColumnSpan="2" Margin="5,41,141,34" Grid.Row="1"/>
+        <TextBox Grid.Column="1" Width="auto" Margin="35,15,12,10" SpellCheck.IsEnabled="True" AcceptsReturn="True"  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"
+         ScrollViewer.CanContentScroll="True"
+                 TextWrapping="Wrap"   MaxHeight="90px" Name="txtbxDescrip" Grid.Row="1"
+
+         />
+        <Button Grid.Row="3" Content="Add Team" HorizontalAlignment="Right" Margin="0,149,24,-161" Grid.Column="1" Width="142" />
     </Grid>
 </Window>
