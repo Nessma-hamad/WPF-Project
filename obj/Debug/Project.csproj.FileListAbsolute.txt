@@ -96,3 +96,7 @@ C:\Users\Microsoft\Source\Repos\WPF-Project3\obj\Debug\Project.Properties.Resour
 C:\Users\Microsoft\Source\Repos\WPF-Project3\obj\Debug\Project.csproj.GenerateResource.Cache
 C:\Users\Microsoft\Source\Repos\WPF-Project3\obj\Debug\tring.g.cs
 C:\Users\Microsoft\Source\Repos\WPF-Project3\obj\Debug\tring.baml
+C:\Users\emabd\Source\Repos\WPF-Project\obj\Debug\tring.g.cs
+C:\Users\emabd\Source\Repos\WPF-Project\obj\Debug\tring.baml
+C:\Users\emabd\Source\Repos\WPF-Project\obj\Debug\CreateCategoryWindow.g.cs
+C:\Users\emabd\Source\Repos\WPF-Project\obj\Debug\CreateCategoryWindow.baml

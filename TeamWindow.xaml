@@ -31,7 +31,7 @@
                                 <ColumnDefinition></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <Button Height="50" Width="250" Grid.Column="0" Background="#FF2C73BB" Foreground="White" FontSize="20">Add Category</Button>
+                            <Button Height="50" Width="250" Grid.Column="0" Background="#FF2C73BB" Foreground="White" FontSize="20" Click="Button_Click">Add Category</Button>
                             <Button Height="50" Width="250" Grid.Column="1" Background="#FF2C73BB" Foreground="White" FontSize="20">Add Task</Button>
                         </Grid>
                     </StackPanel>

@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CreateCategoryWindow.xaml.cs">
+      <DependentUpon>CreateCategoryWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TeamWindow.xaml.cs">
       <DependentUpon>TeamWindow.xaml</DependentUpon>
     </Compile>
@@ -90,6 +93,10 @@
       <DependentUpon>basic.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="CreateCategoryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CreatTeam.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

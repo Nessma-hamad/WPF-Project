@@ -15,19 +15,13 @@ using System.Windows.Shapes;
 namespace Project
 {
     /// <summary>
-    /// Interaction logic for TeamWindow.xaml
+    /// Interaction logic for CreateCategoryWindow.xaml
     /// </summary>
-    public partial class TeamWindow : Window
+    public partial class CreateCategoryWindow : Window
     {
-        public TeamWindow()
+        public CreateCategoryWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            CreateCategoryWindow categoryWindow = new CreateCategoryWindow();
-            categoryWindow.Show();
         }
     }
 }

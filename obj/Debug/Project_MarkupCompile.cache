@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\ITI\WPF\Project\WPF-Project\obj\Debug\
+C:\Users\emabd\Source\Repos\WPF-Project\obj\Debug\
 Project
 none
 false
 DEBUG;TRACE
-E:\ITI\WPF\Project\WPF-Project\App.xaml
-8-415708638
+C:\Users\emabd\Source\Repos\WPF-Project\App.xaml
+9-2024920780
 
-13-1275116477
+131000846669
 13738642453
-AddTask.xaml;AddUser.xaml;basic.xaml;CreatTeam.xaml;InviteUser.xaml;TeamWindow.xaml;tring.xaml;ViweTask.xaml;
+AddTask.xaml;AddUser.xaml;basic.xaml;CreateCategoryWindow.xaml;CreatTeam.xaml;InviteUser.xaml;TeamWindow.xaml;tring.xaml;ViweTask.xaml;
 
-True
+False
 
