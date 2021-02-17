@@ -6,6 +6,17 @@
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
         Title="TeamWindow" Height="600" Width="1020" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Style.Setters>
+                <Setter Property="FontSize" Value="22"></Setter>
+                <Setter Property="Foreground" Value="White"></Setter>
+                <Setter Property="Background" Value="#FF2C73BB"></Setter>
+                <Setter Property="Height" Value="50"></Setter>
+                <Setter Property="Width" Value="250"></Setter>
+            </Style.Setters>
+        </Style>
+    </Window.Resources>
     <StackPanel>
         <Grid Height="100" VerticalAlignment="Top" Background="{x:Static SystemColors.MenuHighlightBrush}">
             <TextBlock Text="TeamName" Foreground="White" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Century Gothic"></TextBlock>
@@ -31,15 +42,15 @@
                                 <ColumnDefinition></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <Button Height="50" Width="250" Grid.Column="0" Background="#FF2C73BB" Foreground="White" FontSize="20" Click="Button_Click">Add Category</Button>
-                            <Button Height="50" Width="250" Grid.Column="1" Background="#FF2C73BB" Foreground="White" FontSize="20">Add Task</Button>
+                            <Button Grid.Column="0" Click="Button_Click">Add Category</Button>
+                            <Button  Grid.Column="1">Add Task</Button>
                         </Grid>
                     </StackPanel>
                 </TabItem>
                 <TabItem Header="Members" Background="Transparent" Padding="20">
                     <StackPanel>
                         <ScrollViewer Height="343"></ScrollViewer>
-                        <Button Content="Add Member" Background="#FF2C73BB" Width="200" Height="70" HorizontalAlignment="Right" Margin="0,0,30,0" FontSize="23" Foreground="White"></Button>
+                        <Button Content="Add Member" HorizontalAlignment="Right" Margin="0,0,30,0"></Button>
                     </StackPanel>
                 </TabItem>
                 <TabItem Header="Archive" Background="Transparent" Padding="20">
