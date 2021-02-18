@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
-        Title="ViweTask" Height="600" Width="700">
-    <Grid>
+        Title="ViweTask" Height="600" Width="700" MinWidth="600">
+    
         <ScrollViewer>
+        <Viewbox>
             <Grid>
+           
                 <StackPanel Orientation="Horizontal" >
                     <TextBlock Margin="218,21,43,522" FontSize="20" FontFamily="Algerian" RenderTransformOrigin="0.439,-2.151"><Run Text="Task Name"/></TextBlock>
                     <Button Width="80" Margin="100,21,0,582" Content="Edit"/>
@@ -58,7 +60,8 @@
 
                 </StackPanel>
             </Grid>
-        </ScrollViewer>
-    </Grid>
+        </Viewbox>
+    </ScrollViewer>
+    
 
 </Window>

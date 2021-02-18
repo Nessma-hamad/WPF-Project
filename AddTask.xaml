@@ -5,9 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
-        Title="AddTask" Height="400" Width="450">
-    <Grid>
-    <StackPanel Orientation="Vertical">
+        Title="AddTask" Height="400" Width="450" MinWidth="430">
+    <Window.Resources>
+        <DataTemplate x:Key="textstyle">
+            
+        </DataTemplate>
+    </Window.Resources>
+    <Viewbox>
+        <StackPanel Orientation="Vertical">
         <StackPanel Height="48">
             <TextBlock Margin="150,0,43,0" FontSize="20" FontFamily="Algerian"><Run Text="Create Task"/></TextBlock>
         </StackPanel>
@@ -40,5 +45,5 @@
         </StackPanel>
         <Button Width="60" Height="30">create</Button>
     </StackPanel>
-    </Grid>
+    </Viewbox>
 </Window>
