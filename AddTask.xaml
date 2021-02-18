@@ -7,9 +7,12 @@
         mc:Ignorable="d"
         Title="AddTask" Height="400" Width="450" MinWidth="430">
     <Window.Resources>
-        <DataTemplate x:Key="textstyle">
-            
-        </DataTemplate>
+        <Style TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="Foreground"  Value="#FF121555"></Setter>
+            </Style.Setters>     
+        </Style>
+        
     </Window.Resources>
     <Viewbox>
         <StackPanel Orientation="Vertical">
@@ -43,7 +46,7 @@
                 </StackPanel>
             </StackPanel>
         </StackPanel>
-        <Button Width="60" Height="30">create</Button>
+        <Button Width="50">create</Button>
     </StackPanel>
     </Viewbox>
 </Window>
