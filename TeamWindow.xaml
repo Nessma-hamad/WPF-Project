@@ -43,14 +43,14 @@
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             <Button Grid.Column="0" Click="Button_Click">Add Category</Button>
-                            <Button  Grid.Column="1" Name="AddTaskBtn">Add Task</Button>
+                            <Button  Grid.Column="1" Name="AddTaskBtn" Margin="129,25,128,25" Height="Auto"  Click="AddTaskBtn_Click">Add Task</Button>
                         </Grid>
                     </StackPanel>
                 </TabItem>
                 <TabItem Header="Members" Background="Transparent" Padding="20">
                     <StackPanel>
                         <ScrollViewer Height="343"></ScrollViewer>
-                        <Button Content="Add Member" HorizontalAlignment="Right" Margin="0,0,30,0"></Button>
+                        <Button Content="Add Member" HorizontalAlignment="Right" Margin="0,0,30,0" Name="addM" Click="addM_Click"></Button>
                     </StackPanel>
                 </TabItem>
                 <TabItem Header="Archive" Background="Transparent" Padding="20">

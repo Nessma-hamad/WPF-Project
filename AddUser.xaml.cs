@@ -17,11 +17,64 @@ namespace Project
     /// <summary>
     /// Interaction logic for AddUser.xaml
     /// </summary>
+    /// 
     public partial class AddUser : Window
     {
+        public static event Action<string, string, string> newuser;
         public AddUser()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            bool vaild = true;
+
+
+            // lblEmailValidation.Visible = false;
+
+
+            if (txtbxUserName.Text.Length >= 4)
+            {
+                NamError.Visibility = Visibility.Hidden;
+
+            }
+            else
+            {
+                NamError.Visibility = Visibility.Visible;
+                vaild = false;
+            }
+
+
+            if (txtbxmail.Text.Contains("@") && txtbxmail.Text.Contains("."))
+            {
+                EmailError.Visibility = Visibility.Hidden;
+
+            }
+            else
+            {
+
+                EmailError.Visibility = Visibility.Visible;
+
+                vaild = false;
+
+            }
+
+            if (vaild == true)
+            {
+
+                MessageBox.Show("sucess added user");
+                User AddNewUser = new User(txtbxUserName.Text, txtbxmail.Text, "");
+
+
+                SampleData.Users.Add(AddNewUser);
+
+
+                newuser(AddNewUser.Name, AddNewUser.Email, AddNewUser.Picture);
+
+
+
+            }
         }
     }
 }

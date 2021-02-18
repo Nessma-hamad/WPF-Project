@@ -17,11 +17,23 @@ namespace Project
     /// <summary>
     /// Interaction logic for CreatTeam.xaml
     /// </summary>
+   
     public partial class CreatTeam : Window
     {
+        //public static event Action<string, string> NewTeam;
         public CreatTeam()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Team Add_team = new Team(txtbxTeamName.Text, txtbxDescrip.Text);
+          //  NewTeam(Add_team.Name, Add_team.Description);
+            SampleData.Teams.Add(Add_team);
+
+            TeamWindow w = new TeamWindow();
+            w.Show();
         }
     }
 }

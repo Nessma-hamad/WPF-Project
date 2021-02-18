@@ -55,15 +55,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Archive.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="Comment.cs" />
     <Compile Include="CreateCategoryWindow.xaml.cs">
       <DependentUpon>CreateCategoryWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SampleData.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="Team.cs" />
     <Compile Include="TeamWindow.xaml.cs">
       <DependentUpon>TeamWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="tring.xaml.cs">
       <DependentUpon>tring.xaml</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <Compile Include="ViweTask.xaml.cs">
       <DependentUpon>ViweTask.xaml</DependentUpon>
     </Compile>

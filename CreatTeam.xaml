@@ -5,17 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
-        Title="CreatTeam" Height="600" Width="600">
+        Title="CreatTeam" Height="600" Width="1443.564">
     <Window.Resources>
         <Style TargetType="TextBox">
             <Style.Setters>
                 <Setter Property="FontSize" Value="18"></Setter>
                 <Setter Property="FontWeight" Value="Bold"></Setter>
                 <Setter Property="TextAlignment" Value="Left"></Setter>
+                <Setter Property="Background" Value="Orange"></Setter>
 
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsFocused" Value="true">
+                    <Setter Property="BorderBrush" Value="Orange"></Setter>
+                    <Setter Property="BorderThickness" Value="1"></Setter>
+                    <Setter Property="Height" Value="100"></Setter>
+                    <Setter Property="Background" Value="White"></Setter>
+                </Trigger>
+
+
+            </Style.Triggers>
+
+        </Style>
+        <Style TargetType="Button">
+            <Style.Setters>
+                <Setter Property="Background" Value="Orange"></Setter>
+                <Setter Property="FontWeight" Value="ExtraBold"></Setter>
+            </Style.Setters>
+            <Style.Triggers>
+
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="FontSize" Value="20"></Setter>
+                    <Setter Property="Foreground" Value="Orange"></Setter>
+                    <Setter Property="BorderBrush" Value="Orange"></Setter>
+                    <Setter Property="BorderThickness" Value="2"></Setter>
+                    <Setter Property="Background" Value="#FFF5B42A"></Setter>
+
+                </Trigger>
+            </Style.Triggers>
+
+        </Style>
+        <Style TargetType="Label">
+            <Style.Setters>
+                <Setter Property="FontWeight" Value="ExtraBlack"></Setter>
+                <Setter Property="FontSize" Value="16"></Setter>
             </Style.Setters>
 
         </Style>
+
     </Window.Resources>
     <Grid Margin="20 0 0 0 ">
         <Grid.ColumnDefinitions>
@@ -24,22 +61,26 @@
 
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto" MinHeight="80"></RowDefinition>
+            <RowDefinition Height="auto" MinHeight="120"></RowDefinition>
             <RowDefinition Height="auto" MinHeight="80"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="auto" MinHeight="80"></RowDefinition>
 
 
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" Name="TeamNamtxt"  Content="Name:" Grid.ColumnSpan="2" Margin="15,50,131,42"  />
-        <TextBox Grid.Row="0" Grid.Column="1" Width="auto" Margin="35,49,21,36" MaxHeight="40px"  Name="txtbxTeamName" MaxLength="20"/>
-        <Label Grid.Column="0" Name="Teamdesctxt"  Content="Description:" Grid.ColumnSpan="2" Margin="5,41,141,34" Grid.Row="1"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" TextAlignment="Center" FontSize="26" FontWeight="Bold" >
+            Create Team
+        </TextBlock>
+        <Label Grid.Row="1" Grid.Column="0" Name="TeamNamtxt"  Content="Name:" Grid.ColumnSpan="2" Margin="15,50,131,42"  />
+        <TextBox Grid.Row="1" Grid.Column="1" Width="auto" Margin="35,49,21,36" MaxHeight="40px"  Name="txtbxTeamName" MaxLength="20"/>
+        <Label Grid.Column="0" Name="Teamdesctxt"  Content="Description:" Grid.ColumnSpan="2" Margin="5,41,141,34" Grid.Row="2"/>
         <TextBox Grid.Column="1" Width="auto" Margin="35,15,12,10" SpellCheck.IsEnabled="True" AcceptsReturn="True"  ScrollViewer.HorizontalScrollBarVisibility="Auto"
          ScrollViewer.VerticalScrollBarVisibility="Auto"
          ScrollViewer.CanContentScroll="True"
-                 TextWrapping="Wrap"   MaxHeight="90px" Name="txtbxDescrip" Grid.Row="1"
+                 TextWrapping="Wrap"   MaxHeight="90px" Name="txtbxDescrip" Grid.Row="2"
 
          />
-        <Button Grid.Row="3" Content="Add Team" HorizontalAlignment="Right" Margin="0,149,24,-161" Grid.Column="1" Width="142" />
+        <Button Grid.Row="3" Content="Add Team" HorizontalAlignment="Right" Margin="0,149,24,-161" Grid.Column="1" Width="142" Click="Button_Click"/>
     </Grid>
 </Window>

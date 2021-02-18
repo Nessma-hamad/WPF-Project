@@ -29,5 +29,19 @@ namespace Project
             CreateCategoryWindow categoryWindow = new CreateCategoryWindow();
             categoryWindow.Show();
         }
+
+        private void AddTaskBtn_Click(object sender, RoutedEventArgs e)
+        {
+            AddTask t = new AddTask();
+            t.Show();
+        }
+
+       
+        private void addM_Click(object sender, RoutedEventArgs e)
+        {
+            InviteUser u = new InviteUser();
+            u.Show();
+
+        }
     }
 }

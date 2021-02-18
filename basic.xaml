@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
         Title="Team Mangement System" Height="600" Width="700">
+    <Viewbox>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -32,5 +33,6 @@
 
 
     </Grid>
+    </Viewbox>
 </Window>
 <!--//Height="50" Width="200" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24" FontWeight="Bold"-->
