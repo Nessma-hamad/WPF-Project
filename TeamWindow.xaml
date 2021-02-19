@@ -49,7 +49,18 @@
                 </TabItem>
                 <TabItem Header="Members" Background="Transparent" Padding="20">
                     <StackPanel>
-                        <ScrollViewer Height="343"></ScrollViewer>
+                        <ScrollViewer Height="343">
+                            <ComboBox Height="30" Width="800" Margin="20" VerticalAlignment="Top" x:Name="TeamUsers">
+                                <ComboBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock Text="{Binding Path=Name}"></TextBlock>
+                                            <TextBlock Text="{Binding Path=Email}"></TextBlock>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ComboBox.ItemTemplate>
+                            </ComboBox>
+                        </ScrollViewer>
                         <Button Content="Add Member" HorizontalAlignment="Right" Margin="0,0,30,0" Name="addM" Click="addM_Click"></Button>
                     </StackPanel>
                 </TabItem>

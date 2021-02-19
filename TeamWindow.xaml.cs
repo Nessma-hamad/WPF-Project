@@ -22,8 +22,10 @@ namespace Project
         public TeamWindow(string TName)
         {
             InitializeComponent();
+            Team curent = GetCurrentTeam(TName);
             teamnamelabl.Text = TName;
             CreateCategoryWindow.newCtegory += AddCategory;
+            TeamUsers.ItemsSource = curent.users;
 
         }
         private Team checkExistingTeam(string name)
