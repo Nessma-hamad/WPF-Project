@@ -36,17 +36,17 @@ namespace Project
         {
             // ListViewItem items = listView.Items.Add(nameOFuser);
             // items.SubItems.Add(emailofuser);
-            // User c = new User(nameOFuser, emailofuser);
+            User c = new User(nameOFuser, emailofuser);
 
-            // SampleData.Users.Add(c);
+           SampleData.Users.Add(c);
 
             listView.Visibility = Visibility.Visible;
             lvData.Visibility = Visibility.Visible;
-            lvData.Content = "No Of Users "+SampleData.Users.Count();
-            listView.ItemsSource = SampleData.Users;
+        
+             //listView.ItemsSource = SampleData.Users;
             // listView.ItemsSource = "";
-
-
+            this.listView.Items.Add(new User { Name = nameOFuser, Email = emailofuser});
+            lvData.Content = "No Of Users " + listView.Items.Count;
 
         }
 

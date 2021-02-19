@@ -16,7 +16,7 @@
                 <RowDefinition></RowDefinition>
 
             </Grid.RowDefinitions>
-            <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="auto" VerticalAlignment="Center" Width="auto" Grid.Row="0" Grid.Column="0" >
+            <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="auto" VerticalAlignment="Center" Width="auto" Grid.Row="0" Grid.Column="0" Margin="0,2,0,-2" >
                 <TabItem Header="Teams" Height="50" Width="200" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24" FontWeight="Bold" Grid.Column="0">
 
 
@@ -32,16 +32,19 @@
                                 <GridView>
                                     <!--<GridViewColumn Header="User Name " Width="200"></GridViewColumn>
                                     <GridViewColumn Header="Email" Width="200"></GridViewColumn>-->
+                                    <GridViewColumn Header="User Name" Width="190"  DisplayMemberBinding="{Binding Name}" />
+                                    <GridViewColumn Header="Email" Width="300" DisplayMemberBinding="{Binding Email}"/>
 
-                                    <GridViewColumn Header="Name" Width="190" DisplayMemberBinding="{Binding Name}" />
+                                    <!--<GridViewColumn Header="Name" Width="190" DisplayMemberBinding="{Binding Name}" />
 
                                     <GridViewColumn Header="Email" Width="300">
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
-                                                <TextBlock Text="{Binding Email}" TextDecorations="Underline" Foreground="Blue" Cursor="Hand" />
+                                                <TextBlock Text="{Binding Email}" TextDecorations="Underline"  
+                                                           Foreground="Blue" Cursor="Hand" />
                                             </DataTemplate>
-                                        </GridViewColumn.CellTemplate>
-                                    </GridViewColumn>
+                                        </GridViewColumn.CellTemplate>-->
+                                   <!--</GridViewColumn>-->
                                 </GridView>
 
 
