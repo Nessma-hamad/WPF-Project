@@ -12,7 +12,7 @@
                 <Setter Property="FontSize" Value="18"></Setter>
                 <Setter Property="FontWeight" Value="Bold"></Setter>
                 <Setter Property="TextAlignment" Value="Left"></Setter>
-                <Setter Property="Background" Value="Orange"></Setter>
+                <Setter Property="Background" Value="#FFDBDCDE"></Setter>
 
             </Style.Setters>
             <!--<Style.Triggers>
@@ -29,7 +29,7 @@
         </Style>
         <Style TargetType="Button">
             <Style.Setters>
-                <Setter Property="Background" Value="Orange"></Setter>
+                <Setter Property="Background" Value="#FFDEE6F0"></Setter>
                 <Setter Property="FontWeight" Value="ExtraBold"></Setter>
             </Style.Setters>
             <!--<Style.Triggers>
@@ -72,13 +72,13 @@
 
 
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="1" TextAlignment="Center" FontSize="26" FontWeight="Bold" Margin="0 15">
-           Add User Form
+        <TextBlock Grid.Row="0" Grid.Column="1" TextAlignment="Center" FontFamily="Algerian" FontSize="26" FontWeight="Bold" Margin="0 15">
+           Add User
         </TextBlock>
-        <Label Grid.Row="1" Grid.Column="0" Name="UserNamtxt"  Content="Name:" Grid.ColumnSpan="2" Margin="15,50,131,42"  />
-        <TextBox Grid.Row="1" Grid.Column="1" Width="auto" Margin="35,49,21,36" MaxHeight="40px"  Name="txtbxUserName" MaxLength="5"/>
-        <Label Grid.Column="0" Name="UseEmailLabel"  Content="Email:" Grid.ColumnSpan="2" Margin="15,40,131,35" Grid.Row="3"/>
-        <TextBox Grid.Column="1" Width="auto" Name="txtbxmail" Margin="38,31,23,38" Grid.Row="3" />
+        <Label Grid.Row="1" Grid.Column="0" Name="UserNamtxt"  Content="Name:" Grid.ColumnSpan="2" FontFamily="Algerian" Margin="15,50,131,42"  />
+        <TextBox Grid.Row="1" Grid.Column="1" Width="auto" Margin="35,49,320,42" MaxHeight="40px"  Name="txtbxUserName" MaxLength="5" Background="White"/>
+        <Label Grid.Column="0" Name="UseEmailLabel"  Content="Email:" Grid.ColumnSpan="2" FontFamily="Algerian" Margin="15,40,131,35" Grid.Row="3"/>
+        <TextBox Grid.Column="1" Width="auto" Name="txtbxmail" Margin="38,31,206,66" Grid.Row="3" Background="White" />
         <TextBlock Grid.Column="1" Grid.Row="2" x:Name="NamError" TextAlignment="Center" Foreground="Red" Visibility="Hidden" Margin="10,0,10,10"  
                         >  Name Must contain at Least 4 letters</TextBlock>
 
@@ -87,6 +87,6 @@
               >Invaild Email</TextBlock>
 
 
-        <Button Grid.Row="5" Content="Add User" HorizontalAlignment="Right" Margin="0,101,10,66" Grid.Column="1" Width="177" Click="Button_Click" />
+        <Button Grid.Row="5" FontFamily="Algerian" Content="Add User" HorizontalAlignment="Right" Margin="0,101,10,66" Grid.Column="1" Width="177" Click="Button_Click" />
     </Grid>
 </Window>

@@ -137,5 +137,11 @@ namespace Project
         {
             FillCategoryList();
         }
+
+        private void viewTaskBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ViweTask viwe = new ViweTask();
+            viwe.Show();
+        }
     }
 }

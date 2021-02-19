@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
-        Title="CreatTeam" Height="600" Width="1443.564">
+        Title="CreatTeam" Height="600" Width="900.564">
     <Window.Resources>
         <Style TargetType="TextBox">
             <Style.Setters>
@@ -69,18 +69,18 @@
 
 
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="1" TextAlignment="Center" FontSize="26" FontWeight="Bold" >
+        <TextBlock Grid.Row="0" Grid.Column="1" FontFamily="Algerian" TextAlignment="Center" FontSize="26" FontWeight="Bold" >
             Create Team
         </TextBlock>
-        <Label Grid.Row="1" Grid.Column="0" Name="TeamNamtxt"  Content="Name:" Grid.ColumnSpan="2" Margin="15,50,131,42"  />
-        <TextBox Grid.Row="1" Grid.Column="1" Width="auto" Margin="35,49,21,36" MaxHeight="40px"  Name="txtbxTeamName" MaxLength="20"/>
-        <Label Grid.Column="0" Name="Teamdesctxt"  Content="Description:" Grid.ColumnSpan="2" Margin="5,41,141,34" Grid.Row="2"/>
-        <TextBox Grid.Column="1" Width="auto" Margin="35,15,12,10" SpellCheck.IsEnabled="True" AcceptsReturn="True"  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+        <Label Grid.Row="1" Grid.Column="0" Name="TeamNamtxt" FontFamily="Algerian"  Content="Name:" Grid.ColumnSpan="2" Margin="15,50,131,42"  />
+        <TextBox Grid.Row="1" Grid.Column="1" Width="auto" Margin="35,49,542,42" MaxHeight="40px"  Name="txtbxTeamName" MaxLength="20" Background="White"/>
+        <Label Grid.Column="0" Name="Teamdesctxt" FontFamily="Algerian"  Content="Description:" Grid.ColumnSpan="2" Margin="5,41,141,34" Grid.Row="2"/>
+        <TextBox Grid.Column="1" Width="auto" Margin="35,15,211,34" SpellCheck.IsEnabled="True" AcceptsReturn="True"  ScrollViewer.HorizontalScrollBarVisibility="Auto"
          ScrollViewer.VerticalScrollBarVisibility="Auto"
          ScrollViewer.CanContentScroll="True"
-                 TextWrapping="Wrap"   MaxHeight="90px" Name="txtbxDescrip" Grid.Row="2"
+                 TextWrapping="Wrap"   MaxHeight="90px" Name="txtbxDescrip" Grid.Row="2" Background="White" RenderTransformOrigin="0.505,0.741"
 
          />
-        <Button Grid.Row="3" Content="Add Team" HorizontalAlignment="Right" Margin="0,149,24,-161" Grid.Column="1" Width="142" Click="Button_Click"/>
+        <Button Grid.Row="3" FontFamily="Algerian" Content="Add Team" HorizontalAlignment="Right" Margin="0,149,24,-161" Grid.Column="1" Width="142" Click="Button_Click" Background="#FFB7C0CF"/>
     </Grid>
 </Window>

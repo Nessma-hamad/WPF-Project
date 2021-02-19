@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="CreateCategoryWindow" Height="200" Width="300" WindowStartupLocation="CenterScreen">
     <StackPanel Width="250" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBox Name="newCategoryName" Height="50"></TextBox>
-        <Button Content="Add category" Name="addnewCategory" Height="50" Width="200" Margin="20" Background="#FF2C73BB"  FontSize="22" Foreground="White" Click="addnewCategory_Click"></Button>
+        <TextBox Name="newCategoryName" Height="29"></TextBox>
+        <Button FontFamily="Algerian" Content="Add category" x:Name="addnewCategory" Height="30" Margin="50,20,30,20" Background="#FF75889B"  FontSize="22" Foreground="White" Click="addnewCategory_Click"/>
     </StackPanel>
 </Window>
