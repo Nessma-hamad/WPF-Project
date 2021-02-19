@@ -87,6 +87,16 @@ namespace Project
             }
 
         }
+        private void fillListOfTask(List<Task> Tasks)
+        {
+            TasksList.Items.Clear();
+            foreach (Task task in Tasks)
+            {
+                if (task.IsDone == false)
+                    TasksList.Items.Add(task);
+
+            }
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -111,6 +121,15 @@ namespace Project
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+        private void categoryList_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            if (categoryList.SelectedIndex == -1)
+            {
+                return;
+            }
+            Category category = (Category)categoryList.SelectedItem;
+            fillListOfTask(category.Tasks);
         }
         private void TeamWindow_Load(object sender, RoutedEventArgs e)
         {
