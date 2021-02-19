@@ -20,7 +20,7 @@ namespace Project
    
     public partial class CreatTeam : Window
     {
-        //public static event Action<string, string> NewTeam;
+         public static event Action<string, string> NewTeam;
         public CreatTeam()
         {
             InitializeComponent();
@@ -29,9 +29,10 @@ namespace Project
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Team Add_team = new Team(txtbxTeamName.Text, txtbxDescrip.Text);
-          //  NewTeam(Add_team.Name, Add_team.Description);
+           NewTeam(Add_team.Name, Add_team.Description);
             SampleData.Teams.Add(Add_team);
 
+            this.Hide();
             TeamWindow w = new TeamWindow();
             w.Show();
         }

@@ -20,13 +20,54 @@ namespace Project
     /// </summary>
     public partial class basic : Window
     {
+        List<Team> listOfTeams = new List<Team>();
+
         public basic()
         {
             InitializeComponent();
             AddUser.newuser += adduser;
-          
-            //createTeamForm.NewTeam += addteam;
+            CreatTeam.NewTeam += addteam; 
+             
         }
+
+       
+        private void addteam(string teamName, string teamDesciption)
+        {
+            listOfTeams.Add(new Team(teamName, teamDesciption));
+            //int width = 120;
+            //int height = 100;
+
+            //foreach (Team team in listOfTeams)
+            //{
+
+                Button dynamicTeamBtn = new Button();
+                dynamicTeamBtn.Width = 120;
+                dynamicTeamBtn.Height = 100;
+                dynamicTeamBtn.Content = teamName;
+            
+                dynamicTeamBtn.Click += new RoutedEventHandler(ShowTeam);
+                sp.Children.Add(dynamicTeamBtn);
+                
+                //dynamicTeamBtn.Location = new Point(width, height);
+                //dynamicTeamBtn.Text = team.Name;
+                //dynamicTeamBtn.Font = new Font("Georgia", 16);
+                //dynamicTeamBtn.Click += new EventHandler(ShowTeam);
+                //dynamicTeamBtn.Size = new Size(150, 70);
+                // Team_Tab.Controls.Add(dynamicTeamBtn);
+                //width += 160;
+                //loc2 += 50;
+                // label1.Text = "you have " + listOfTeams.Count.ToString() + " Teams";
+            //}
+
+        }
+        public void ShowTeam(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            string s = btn.Content.ToString();
+            TeamWindow teamform = new TeamWindow();
+            teamform.Show();
+        }
+
 
         //private void adduser(string arg1, string arg2, string arg3)
         //{
