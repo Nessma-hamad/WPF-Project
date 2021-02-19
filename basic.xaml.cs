@@ -64,7 +64,7 @@ namespace Project
         {
             Button btn = (Button)sender;
             string s = btn.Content.ToString();
-            TeamWindow teamform = new TeamWindow();
+            TeamWindow teamform = new TeamWindow(s);
             teamform.Show();
         }
 

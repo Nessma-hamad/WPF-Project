@@ -8,6 +8,6 @@
         Title="CreateCategoryWindow" Height="200" Width="300" WindowStartupLocation="CenterScreen">
     <StackPanel Width="250" HorizontalAlignment="Center" VerticalAlignment="Center">
         <TextBox Name="newCategoryName" Height="50"></TextBox>
-        <Button Content="Add category" Height="50" Width="200" Margin="20" Background="#FF2C73BB"  FontSize="22" Foreground="White"></Button>
+        <Button Content="Add category" Name="addnewCategory" Height="50" Width="200" Margin="20" Background="#FF2C73BB"  FontSize="22" Foreground="White" Click="addnewCategory_Click"></Button>
     </StackPanel>
 </Window>

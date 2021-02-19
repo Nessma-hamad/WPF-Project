@@ -19,9 +19,24 @@ namespace Project
     /// </summary>
     public partial class CreateCategoryWindow : Window
     {
+        public static event Action<string> newCtegory;
         public CreateCategoryWindow()
         {
             InitializeComponent();
+        }
+
+        private void addnewCategory_Click(object sender, RoutedEventArgs e)
+        {
+            if (newCtegory != null && newCategoryName.Text != "")
+            {
+                newCtegory(newCategoryName.Text);
+            }
+            else
+            {
+                MessageBox.Show("category name empty!!please enter category name first");
+            }
+            newCategoryName.Text = "";
+            this.Close();
         }
     }
 }

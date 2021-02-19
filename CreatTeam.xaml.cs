@@ -33,7 +33,7 @@ namespace Project
             SampleData.Teams.Add(Add_team);
 
             this.Hide();
-            TeamWindow w = new TeamWindow();
+            TeamWindow w = new TeamWindow(txtbxTeamName.Text);
             w.Show();
         }
     }
