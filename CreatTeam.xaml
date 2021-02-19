@@ -19,7 +19,7 @@
                 <Trigger Property="IsFocused" Value="true">
                     <Setter Property="BorderBrush" Value="Orange"></Setter>
                     <Setter Property="BorderThickness" Value="1"></Setter>
-                    <Setter Property="Height" Value="100"></Setter>
+                  
                     <Setter Property="Background" Value="White"></Setter>
                 </Trigger>
 
@@ -73,7 +73,7 @@
             Create Team
         </TextBlock>
         <Label Grid.Row="1" Grid.Column="0" Name="TeamNamtxt" FontFamily="Algerian"  Content="Name:" Grid.ColumnSpan="2" Margin="15,50,131,42"  />
-        <TextBox Grid.Row="1" Grid.Column="1" Width="auto" Margin="35,49,542,42" MaxHeight="40px"  Name="txtbxTeamName" MaxLength="20" Background="White"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Width="auto" Margin="35,49,211,42" MaxHeight="40px"  Name="txtbxTeamName" MaxLength="20" Background="White"/>
         <Label Grid.Column="0" Name="Teamdesctxt" FontFamily="Algerian"  Content="Description:" Grid.ColumnSpan="2" Margin="5,41,141,34" Grid.Row="2"/>
         <TextBox Grid.Column="1" Width="auto" Margin="35,15,211,34" SpellCheck.IsEnabled="True" AcceptsReturn="True"  ScrollViewer.HorizontalScrollBarVisibility="Auto"
          ScrollViewer.VerticalScrollBarVisibility="Auto"

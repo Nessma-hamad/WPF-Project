@@ -76,14 +76,14 @@
            Add User
         </TextBlock>
         <Label Grid.Row="1" Grid.Column="0" Name="UserNamtxt"  Content="Name:" Grid.ColumnSpan="2" FontFamily="Algerian" Margin="15,50,131,42"  />
-        <TextBox Grid.Row="1" Grid.Column="1" Width="auto" Margin="35,49,320,42" MaxHeight="40px"  Name="txtbxUserName" MaxLength="5" Background="White"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Width="auto" Margin="35,49,206,42" MaxHeight="40px"  Name="txtbxUserName" MaxLength="5" Background="White"/>
         <Label Grid.Column="0" Name="UseEmailLabel"  Content="Email:" Grid.ColumnSpan="2" FontFamily="Algerian" Margin="15,40,131,35" Grid.Row="3"/>
         <TextBox Grid.Column="1" Width="auto" Name="txtbxmail" Margin="38,31,206,66" Grid.Row="3" Background="White" />
-        <TextBlock Grid.Column="1" Grid.Row="2" x:Name="NamError" TextAlignment="Center" Foreground="Red" Visibility="Hidden" Margin="10,0,10,10"  
+        <TextBlock Grid.Row="1" x:Name="NamError" TextAlignment="Center" Foreground="Red" Visibility="Hidden" Margin="15,97,95,10" Grid.ColumnSpan="2"  
                         >  Name Must contain at Least 4 letters</TextBlock>
 
-        <TextBlock Grid.Column="1"  Grid.Row="4" Name="EmailError" Foreground="Red" Visibility="Hidden" 
-                   TextBlock.TextAlignment="Center"
+        <TextBlock  Grid.Row="3" Name="EmailError" Foreground="Red" Visibility="Hidden" 
+                   TextBlock.TextAlignment="Center" Margin="10,75,80,13" Grid.ColumnSpan="2"
               >Invaild Email</TextBlock>
 
 
