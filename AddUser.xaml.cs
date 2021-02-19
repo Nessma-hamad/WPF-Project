@@ -20,7 +20,7 @@ namespace Project
     /// 
     public partial class AddUser : Window
     {
-        public static event Action<string, string, string> newuser;
+        public static event Action<string, string> newuser;
         public AddUser()
         {
             InitializeComponent();
@@ -63,18 +63,23 @@ namespace Project
             if (vaild == true)
             {
 
-                MessageBox.Show("sucess added user");
-                User AddNewUser = new User(txtbxUserName.Text, txtbxmail.Text, "");
+                User AddNewUser = new User(txtbxUserName.Text, txtbxmail.Text);
 
 
+               
                 SampleData.Users.Add(AddNewUser);
 
 
-                newuser(AddNewUser.Name, AddNewUser.Email, AddNewUser.Picture);
-
-
-
+               
+                newuser(AddNewUser.Name, AddNewUser.Email);
+                MessageBox.Show("sucess added user");
+                txtbxUserName.Text = "";
+                txtbxmail.Text = "";
+                this.Hide();
             }
+                
+           
+          //  this.Close();
         }
     }
 }

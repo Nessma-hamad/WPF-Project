@@ -15,7 +15,7 @@
                 <Setter Property="Background" Value="Orange"></Setter>
 
             </Style.Setters>
-            <Style.Triggers>
+            <!--<Style.Triggers>
                 <Trigger Property="IsFocused" Value="true">
                     <Setter Property="BorderBrush" Value="Orange"></Setter>
                     <Setter Property="BorderThickness" Value="1"></Setter>
@@ -24,7 +24,7 @@
                 </Trigger>
 
 
-            </Style.Triggers>
+            </Style.Triggers>-->
 
         </Style>
         <Style TargetType="Button">
@@ -32,7 +32,7 @@
                 <Setter Property="Background" Value="Orange"></Setter>
                 <Setter Property="FontWeight" Value="ExtraBold"></Setter>
             </Style.Setters>
-            <Style.Triggers>
+            <!--<Style.Triggers>
 
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="FontSize" Value="20"></Setter>
@@ -42,7 +42,7 @@
                     <Setter Property="Background" Value="#FFF5B42A"></Setter>
 
                 </Trigger>
-            </Style.Triggers>
+            </Style.Triggers>-->
 
         </Style>
         <Style TargetType="Label">
@@ -63,11 +63,12 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" MinHeight="80"></RowDefinition>
-            <RowDefinition Height="auto" MinHeight="80"></RowDefinition>
+            <RowDefinition Height="auto" MinHeight="123"></RowDefinition>
 
+            <RowDefinition Height="auto" MinHeight="26"></RowDefinition>
+            <RowDefinition Height="auto" MinHeight="106"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="30"></RowDefinition>
-            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
 
 
         </Grid.RowDefinitions>
@@ -76,14 +77,16 @@
         </TextBlock>
         <Label Grid.Row="1" Grid.Column="0" Name="UserNamtxt"  Content="Name:" Grid.ColumnSpan="2" Margin="15,50,131,42"  />
         <TextBox Grid.Row="1" Grid.Column="1" Width="auto" Margin="35,49,21,36" MaxHeight="40px"  Name="txtbxUserName" MaxLength="5"/>
-        <Label Grid.Column="0" Name="UseEmailLabel"  Content="Email:" Grid.ColumnSpan="2" Margin="15,40,131,35" Grid.Row="2"/>
-        <TextBox Grid.Column="1" Width="auto" Name="txtbxmail" Margin="38,31,23,38" Grid.Row="2" />
-        <Label Grid.Column="1" Grid.Row="1" Name="NamError" Foreground="Red" Visibility="Hidden"  
-               >Name Must contain at Least 4 letters</Label>
-        <Label Grid.Column="1" Grid.Row="2" Name="EmailError" Foreground="Red" Visibility="Hidden"  
-               >Invaild Email</Label>
+        <Label Grid.Column="0" Name="UseEmailLabel"  Content="Email:" Grid.ColumnSpan="2" Margin="15,40,131,35" Grid.Row="3"/>
+        <TextBox Grid.Column="1" Width="auto" Name="txtbxmail" Margin="38,31,23,38" Grid.Row="3" />
+        <TextBlock Grid.Column="1" Grid.Row="2" x:Name="NamError" TextAlignment="Center" Foreground="Red" Visibility="Hidden" Margin="10,0,10,10"  
+                        >  Name Must contain at Least 4 letters</TextBlock>
+
+        <TextBlock Grid.Column="1"  Grid.Row="4" Name="EmailError" Foreground="Red" Visibility="Hidden" 
+                   TextBlock.TextAlignment="Center"
+              >Invaild Email</TextBlock>
 
 
-        <Button Grid.Row="3" Content="Add User" HorizontalAlignment="Right" Margin="0,132,20,-144" Grid.Column="1" Width="142" Click="Button_Click" />
+        <Button Grid.Row="5" Content="Add User" HorizontalAlignment="Right" Margin="0,101,10,66" Grid.Column="1" Width="177" Click="Button_Click" />
     </Grid>
 </Window>

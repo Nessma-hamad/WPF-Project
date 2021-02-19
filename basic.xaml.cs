@@ -23,10 +23,35 @@ namespace Project
         public basic()
         {
             InitializeComponent();
+            AddUser.newuser += adduser;
+          
+            //createTeamForm.NewTeam += addteam;
         }
 
-        
-        
+        //private void adduser(string arg1, string arg2, string arg3)
+        //{
+
+        //}
+        private void adduser(string nameOFuser, string emailofuser)
+        {
+            // ListViewItem items = listView.Items.Add(nameOFuser);
+            // items.SubItems.Add(emailofuser);
+            // User c = new User(nameOFuser, emailofuser);
+
+            // SampleData.Users.Add(c);
+
+            listView.Visibility = Visibility.Visible;
+            lvData.Visibility = Visibility.Visible;
+            lvData.Content = "No Of Users "+SampleData.Users.Count();
+            listView.ItemsSource = SampleData.Users;
+            // listView.ItemsSource = "";
+
+
+
+        }
+
+      
+
         private void addTeam_btn_Click(object sender, RoutedEventArgs e)
         {
             CreatTeam addteam = new CreatTeam();

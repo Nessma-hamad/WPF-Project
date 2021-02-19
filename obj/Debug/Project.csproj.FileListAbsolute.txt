@@ -28,3 +28,5 @@ C:\Users\Microsoft\Source\Repos\WPF-Project\obj\Debug\Project.Properties.Resourc
 C:\Users\Microsoft\Source\Repos\WPF-Project\obj\Debug\Project.csproj.GenerateResource.Cache
 C:\Users\Microsoft\Source\Repos\WPF-Project\obj\Debug\Project.exe
 C:\Users\Microsoft\Source\Repos\WPF-Project\obj\Debug\Project.pdb
+C:\Users\Microsoft\Source\Repos\WPF-Project\obj\Debug\safaaaa.g.cs
+C:\Users\Microsoft\Source\Repos\WPF-Project\obj\Debug\safaaaa.baml
